@@ -1,8 +1,8 @@
 # Pandas 1.5.3 Compatibility Note
 
-This update addresses an issue when we use `df.index.droplevel(0)`, where different versions of the **pandas** library may or may not raise an error due to a change in if `groupby().apply()` creates multi-index by default or not .
+This repositary addresses an issue when we use `df.index.droplevel(0)`, where different versions of the **pandas** library may or may not raise an error due to a change in if `groupby().apply()` creates multi-index by default or not .
 
-This issue may cause the function to return below warming signal and a **empty dataframe**: 
+This issue may cause the code to return a error or ,in more complex structures, return below warming signal and a **empty dataframe**: 
 
 ```plaintext
 
